@@ -85,6 +85,14 @@ const dropdownMenuItems = computed(() => {
     },
   });
 
+  items.push({
+    icon: "icon.download",
+    text: t("track.dropdown.download"),
+    clickFunction: () => {
+      console.log("test");
+    },
+  });
+
   return items;
 });
 
